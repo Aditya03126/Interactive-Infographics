@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Renewable Energy Trends - Interactive Infographic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <header>
+            <h1>Global Renewable Energy Trends</h1>
+            <p class="subtitle">An Interactive Journey Through Sustainable Energy Development</p>
+        </header>
+
+        <nav class="infographic-nav">
+            <button class="nav-btn active" data-section="overview">Overview</button>
+            <button class="nav-btn" data-section="solar">Solar Energy</button>
+            <button class="nav-btn" data-section="wind">Wind Power</button>
+            <button class="nav-btn" data-section="hydro">Hydropower</button>
+        </nav>
+
+        <main class="infographic-content">
+            <section id="overview" class="section active">
+                <h2>Global Renewable Energy Overview</h2>
+                <div class="chart-container">
+                    <canvas id="globalTrendsChart"></canvas>
+                </div>
+                <div class="info-cards">
+                    <div class="card" data-tooltip="Represents total renewable energy capacity worldwide">
+                        <h3>Total Capacity</h3>
+                        <p class="stat">2,799 GW</p>
+                        <p class="year">2020</p>
+                    </div>
+                    <div class="card" data-tooltip="Annual growth in renewable energy installations">
+                        <h3>Annual Growth</h3>
+                        <p class="stat">+7.4%</p>
+                        <p class="year">2020</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="solar" class="section">
+                <h2>Solar Energy Growth</h2>
+                <div class="chart-container">
+                    <canvas id="solarChart"></canvas>
+                </div>
+                <div class="interactive-element">
+                    <input type="range" id="solarYearSlider" min="2010" max="2020" value="2020">
+                    <p>Select Year: <span id="solarSelectedYear">2020</span></p>
+                </div>
+                <div class="info-cards">
+                    <div class="card" data-tooltip="Total installed solar capacity globally">
+                        <h3>Global Capacity</h3>
+                        <p class="stat">714 GW</p>
+                        <p class="year">2020</p>
+                    </div>
+                    <div class="card" data-tooltip="Annual growth rate in solar installations">
+                        <h3>Growth Rate</h3>
+                        <p class="stat">+22.5%</p>
+                        <p class="year">2020</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="wind" class="section">
+                <h2>Wind Power Development</h2>
+                <div class="chart-container">
+                    <canvas id="windChart"></canvas>
+                </div>
+                <div class="interactive-element">
+                    <input type="range" id="windYearSlider" min="2010" max="2020" value="2020">
+                    <p>Select Year: <span id="windSelectedYear">2020</span></p>
+                </div>
+                <div class="info-cards">
+                    <div class="card" data-tooltip="Total installed wind power capacity globally">
+                        <h3>Global Capacity</h3>
+                        <p class="stat">743 GW</p>
+                        <p class="year">2020</p>
+                    </div>
+                    <div class="card" data-tooltip="Percentage of global electricity from wind">
+                        <h3>Global Share</h3>
+                        <p class="stat">6.1%</p>
+                        <p class="year">2020</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hydro" class="section">
+                <h2>Hydropower Status</h2>
+                <div class="chart-container">
+                    <canvas id="hydroChart"></canvas>
+                </div>
+                <div class="interactive-element">
+                    <input type="range" id="hydroYearSlider" min="2010" max="2020" value="2020">
+                    <p>Select Year: <span id="hydroSelectedYear">2020</span></p>
+                </div>
+                <div class="info-cards">
+                    <div class="card" data-tooltip="Total installed hydropower capacity globally">
+                        <h3>Global Capacity</h3>
+                        <p class="stat">1,170 GW</p>
+                        <p class="year">2020</p>
+                    </div>
+                    <div class="card" data-tooltip="Percentage of global electricity from hydropower">
+                        <h3>Global Share</h3>
+                        <p class="stat">16.8%</p>
+                        <p class="year">2020</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
