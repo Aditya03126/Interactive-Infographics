@@ -1,6 +1,7 @@
 # Interactive Infographic - Global Renewable Energy Trends
 
 This project is an interactive infographic that visualizes global renewable energy trends. It provides an engaging way to explore data about renewable energy growth worldwide.
+https://aditya03126.github.io/Interactive-Infographics/
 
 ## Features
 
@@ -47,5 +48,6 @@ Tested and working in:
 - Edge (latest)
 
 ## License
+
 
 This project is open source and available under the MIT License.
